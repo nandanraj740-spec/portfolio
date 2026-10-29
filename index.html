@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nandanraj | Portfolio &amp; Resume</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Sticky Navigation Bar -->
+  <header class="navbar no-print">
+    <div class="nav-container">
+      <div class="brand">
+        <span class="brand-avatar">NR</span>
+        <div class="brand-text">
+          <span class="brand-name">Nandanraj</span>
+          <span class="brand-status"><span class="status-dot"></span> Available for Hire</span>
+        </div>
+      </div>
+      
+      <div class="nav-actions">
+        <!-- ATS Resume Mode Toggle -->
+        <button id="atsToggle" class="btn btn-secondary btn-sm" title="Toggle Clean ATS Resume View for Screening" aria-label="Toggle ATS View">
+          <i class="fa-solid fa-file-lines"></i> <span id="atsToggleText">ATS View</span>
+        </button>
+
+        <!-- Theme Toggle Button -->
+        <button id="themeToggle" class="btn-icon" title="Toggle Light / Dark Mode" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon" id="themeIcon"></i>
+        </button>
+
+        <!-- Print / Save CV Button -->
+        <button onclick="window.print()" class="btn btn-primary btn-sm" title="Print or save as ATS-friendly PDF">
+          <i class="fa-solid fa-file-arrow-down"></i> Print / Save CV
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Interactive Portfolio Mode (Default View) -->
+  <main class="page-container" id="portfolioView">
+    
+    <!-- Top Hero Banner Card (Bento Style) -->
+    <section class="hero-card">
+      <div class="hero-left">
+        <span class="badge-role">MCA Scholar &bull; Full-Stack &amp; Android Developer</span>
+        <h1 class="hero-name">Nandanraj</h1>
+        <p class="hero-bio">
+          Building high-performance Android applications and modern full-stack web platforms with clean architecture. Experienced in Jetpack Compose, Firebase cloud infrastructure, and AI-powered product engineering.
+        </p>
+
+        <!-- Quick Contact Tags / Interactive Pills -->
+        <div class="contact-pills">
+          <button class="pill" onclick="copyText('nandanraj740@gmail.com', 'Email copied to clipboard!')" title="Click to copy email">
+            <i class="fa-solid fa-envelope"></i> nandanraj740@gmail.com
+            <span class="copy-hint"><i class="fa-regular fa-copy"></i></span>
+          </button>
+          <button class="pill" onclick="copyText('nandanraj.mca.2025@pim.ac.in', 'Academic email copied!')" title="Click to copy academic email">
+            <i class="fa-solid fa-graduation-cap"></i> nandanraj.mca.2025@pim.ac.in
+            <span class="copy-hint"><i class="fa-regular fa-copy"></i></span>
+          </button>
+          <span class="pill pill-static">
+            <i class="fa-solid fa-location-dot"></i> Udupi, Karnataka, India
+          </span>
+          <a href="https://github.com/nandanraj740-spec" target="_blank" rel="noopener noreferrer" class="pill" title="Visit GitHub Profile">
+            <i class="fa-brands fa-github"></i> nandanraj740-spec
+            <span class="copy-hint"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </a>
+          <span class="pill pill-static" title="ORCID Researcher Identification">
+            <i class="fa-solid fa-id-card"></i> ORCID: 0009-0009-6370-4754
+          </span>
+        </div>
+      </div>
+
+      <!-- Quick Metrics Counter (Medium Unique Bento Style) -->
+      <div class="hero-right">
+        <div class="metric-card">
+          <span class="metric-num">MCA</span>
+          <span class="metric-label">Poornaprajna Inst.</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-num">3+</span>
+          <span class="metric-label">Major Projects Built</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-num">2+</span>
+          <span class="metric-label">Research Papers</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-num">Full-Stack</span>
+          <span class="metric-label">Android &amp; Cloud</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Two-Column Balanced Content Grid -->
+    <div class="content-layout">
+
+      <!-- Left / Main Column: Projects, Research & Education -->
+      <div class="main-column">
+        
+        <!-- Featured Projects Section -->
+        <section class="card-section">
+          <div class="card-section-header">
+            <div class="header-icon icon-indigo"><i class="fa-solid fa-layer-group"></i></div>
+            <div>
+              <h2 class="card-section-title">Featured Projects</h2>
+              <p class="card-section-subtitle">Real-world applications engineered for scale and usability</p>
+            </div>
+          </div>
+
+          <div class="projects-list">
+            
+            <!-- Project 1: AgroMart Ecosystem -->
+            <article class="project-item">
+              <div class="project-header">
+                <div>
+                  <div class="project-tag-row">
+                    <span class="tag-category">Android &bull; AI Commerce</span>
+                    <span class="tag-version">v3.0.0</span>
+                  </div>
+                  <h3 class="project-title">AgroMart Platform</h3>
+                  <p class="project-role">Smart Agricultural Farm-to-Table Marketplace &amp; Admin Suite</p>
+                </div>
+                <div class="tech-stack-pills">
+                  <span>Android SDK</span>
+                  <span>Kotlin / Java</span>
+                  <span>Jetpack Compose</span>
+                  <span>Firebase</span>
+                  <span>OpenRouter AI</span>
+                  <span>Razorpay</span>
+                </div>
+              </div>
+              <p class="project-desc">
+                An end-to-end multi-role digital commerce ecosystem connecting farmers directly with vendors and consumers—eliminating intermediaries to ensure fair prices for fresh agricultural produce.
+              </p>
+              <ul class="feature-bullets">
+                <li><strong>Multi-Role Architecture:</strong> Engineered dedicated flows for Buyers, Farmers, Vendors, and Sub-Admins with secure Google Sign-In and phone OTP verification.</li>
+                <li><strong>AI Farming Assistant:</strong> Integrated multi-model AI chatbot (Google Gemini &amp; LLMs) for instant agricultural advice, crop disease diagnosis, and mandi price benchmarking.</li>
+                <li><strong>Logistics &amp; Payments:</strong> Implemented Razorpay payment gateway, AgroPay digital wallet, live order tracking with 4-digit handover delivery OTP, and dynamic GST invoice generation.</li>
+                <li><strong>Dual App Ecosystem:</strong> Built both the Consumer Main App and the robust Admin App featuring user verification, banner moderation, and analytics dashboards.</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/nandanraj740-spec/Agro-Mart" target="_blank" rel="noopener noreferrer" class="link-btn">
+                  <i class="fa-brands fa-github"></i> Repository
+                </a>
+                <a href="https://github.com/nandanraj740-spec/Agro-Mart/releases/tag/v3.0.0" target="_blank" rel="noopener noreferrer" class="link-btn">
+                  <i class="fa-solid fa-download"></i> Download APKs
+                </a>
+                <a href="https://agromart-portal.vercel.app" target="_blank" rel="noopener noreferrer" class="link-btn">
+                  <i class="fa-solid fa-globe"></i> Live Portal
+                </a>
+              </div>
+            </article>
+
+            <!-- Project 2: AgroMart Web Portal -->
+            <article class="project-item">
+              <div class="project-header">
+                <div>
+                  <div class="project-tag-row">
+                    <span class="tag-category tag-emerald">Web Application</span>
+                  </div>
+                  <h3 class="project-title">AgroMart Distribution Portal</h3>
+                  <p class="project-role">Official Landing Website &amp; APK Distribution Center</p>
+                </div>
+                <div class="tech-stack-pills">
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>JavaScript</span>
+                  <span>Vercel</span>
+                  <span>Cloud Storage</span>
+                </div>
+              </div>
+              <p class="project-desc">
+                High-performance landing website and APK distribution portal providing fast downloads, feature breakdowns, and platform metrics for AgroMart mobile applications.
+              </p>
+              <ul class="feature-bullets">
+                <li>Designed an intuitive, responsive user interface ensuring smooth mobile and desktop browsing.</li>
+                <li>Architected automated download routing pointing directly to verified release builds and checksums.</li>
+                <li>Deployed on Vercel edge network for sub-second load times across Indian mobile networks.</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/nandanraj740-spec/AgroMart-Website" target="_blank" rel="noopener noreferrer" class="link-btn">
+                  <i class="fa-brands fa-github"></i> Repository
+                </a>
+                <a href="https://agromart-portal.vercel.app" target="_blank" rel="noopener noreferrer" class="link-btn">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Website
+                </a>
+              </div>
+            </article>
+
+            <!-- Project 3: Medicare Hospital Management System -->
+            <article class="project-item">
+              <div class="project-header">
+                <div>
+                  <div class="project-tag-row">
+                    <span class="tag-category tag-amber">Enterprise Software</span>
+                  </div>
+                  <h3 class="project-title">Medicare Hospital Management System</h3>
+                  <p class="project-role">Clinical Workflow &amp; Patient Administration Platform</p>
+                </div>
+                <div class="tech-stack-pills">
+                  <span>Java</span>
+                  <span>SQL / MySQL</span>
+                  <span>RDBMS</span>
+                  <span>Software Architecture</span>
+                </div>
+              </div>
+              <p class="project-desc">
+                Comprehensive healthcare information system streamlining clinical administrative tasks, doctor consultations, electronic health records (EHR), and patient billing.
+              </p>
+              <ul class="feature-bullets">
+                <li>Architected relational database schema with ACID compliance for patient histories, prescriptions, and departmental records.</li>
+                <li>Implemented role-based permissions ensuring strict separation between doctors, receptionists, and pharmacy staff.</li>
+                <li>Reduced administrative overhead through automated appointment scheduling and discharge summary reporting.</li>
+              </ul>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- Academic Research & Industry Publications -->
+        <section class="card-section">
+          <div class="card-section-header">
+            <div class="header-icon icon-rose"><i class="fa-solid fa-book-bookmark"></i></div>
+            <div>
+              <h2 class="card-section-title">Research &amp; Publications</h2>
+              <p class="card-section-subtitle">Scholarly research and industry case studies</p>
+            </div>
+          </div>
+
+          <div class="publications-list">
+            
+            <!-- Publication 1 -->
+            <article class="pub-card">
+              <div class="pub-badge">Scholarly Industry Analysis</div>
+              <h3 class="pub-title">Web Development Industry Analysis: Business Models, Technological Innovations, and Future Strategies</h3>
+              <p class="pub-authors">
+                <strong>Nandanraj</strong> &amp; Nikhil &bull; MCA Scholars, Poornaprajna Institute of Management (PIM), Udupi
+              </p>
+              <p class="pub-meta">
+                <i class="fa-solid fa-id-badge"></i> ORCID iD: <strong>0009-0009-6370-4754</strong> &bull; Location: Udupi, Karnataka, India
+              </p>
+              <p class="pub-abstract">
+                An exhaustive, multidimensional investigation examining the global and Indian web development industry, modern cloud architectures, microservices, headless CMS integrations, and emerging AI-assisted development paradigms.
+              </p>
+            </article>
+
+            <!-- Publication 2 -->
+            <article class="pub-card">
+              <div class="pub-badge">Corporate Case Study</div>
+              <h3 class="pub-title">Company Analysis of Global IT and Consulting Firm Accenture</h3>
+              <p class="pub-authors">
+                <strong>Nandanraj</strong> &amp; Nikhil &bull; MCA Scholars, Poornaprajna Institute of Management (PIM), Udupi
+              </p>
+              <p class="pub-meta">
+                <i class="fa-solid fa-id-badge"></i> ORCID iD: <strong>0009-0009-6370-4754</strong> &bull; Conference Research Paper
+              </p>
+              <p class="pub-abstract">
+                In-depth organizational evaluation applying SWOC (Strengths, Weaknesses, Opportunities, Challenges) and ABCD analytical frameworks to examine technological scalability, enterprise delivery models, and responsible AI governance.
+              </p>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="card-section">
+          <div class="card-section-header">
+            <div class="header-icon icon-blue"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div>
+              <h2 class="card-section-title">Education</h2>
+              <p class="card-section-subtitle">Academic degrees and training</p>
+            </div>
+          </div>
+
+          <div class="timeline-box">
+            
+            <div class="timeline-entry">
+              <div class="timeline-dot"></div>
+              <div class="entry-header">
+                <h3 class="entry-title">Master of Computer Applications (MCA)</h3>
+                <span class="entry-date">2024 – Present</span>
+              </div>
+              <p class="entry-institution">Poornaprajna Institute of Management (PIM)</p>
+              <p class="entry-location"><i class="fa-solid fa-location-dot"></i> Udupi, Karnataka, India</p>
+              <p class="entry-detail">
+                Rigorous curriculum focused on advanced data structures, object-oriented software engineering, relational database design, cloud computing, mobile application development, and AI integration.
+              </p>
+            </div>
+
+            <div class="timeline-entry">
+              <div class="timeline-dot"></div>
+              <div class="entry-header">
+                <h3 class="entry-title">Bachelor of Computer Applications / Science</h3>
+                <span class="entry-date">Completed</span>
+              </div>
+              <p class="entry-institution">Mangalore University Affiliated Institution</p>
+              <p class="entry-location"><i class="fa-solid fa-location-dot"></i> Karnataka, India</p>
+              <p class="entry-detail">
+                Core foundation in computer science, algorithms, database management, and programming in C, C++, and Java.
+              </p>
+            </div>
+
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Right Column: Skills, Summary, Certifications & Spoken Languages -->
+      <aside class="sidebar-column">
+
+        <!-- Professional Summary Card -->
+        <section class="card-section">
+          <div class="card-section-header">
+            <div class="header-icon icon-purple"><i class="fa-solid fa-sparkles"></i></div>
+            <div>
+              <h2 class="card-section-title">Profile</h2>
+            </div>
+          </div>
+          <p class="summary-body">
+            Enthusiastic and results-driven MCA scholar with hands-on expertise in full-stack web and native Android application development. Experienced in building production-ready architectures with Jetpack Compose, Firebase, and AI APIs. Passionate about solving real-world challenges through clean code and scalable cloud systems.
+          </p>
+        </section>
+
+        <!-- Technical Skills Card -->
+        <section class="card-section">
+          <div class="card-section-header">
+            <div class="header-icon icon-teal"><i class="fa-solid fa-laptop-code"></i></div>
+            <div>
+              <h2 class="card-section-title">Skills &amp; Tools</h2>
+            </div>
+          </div>
+
+          <div class="skills-block">
+            <div class="skill-group">
+              <span class="group-title">Programming Languages</span>
+              <div class="skill-chips">
+                <span class="chip"><i class="fa-brands fa-java"></i> Java</span>
+                <span class="chip"><i class="fa-solid fa-code"></i> Kotlin</span>
+                <span class="chip"><i class="fa-brands fa-python"></i> Python</span>
+                <span class="chip"><i class="fa-brands fa-js"></i> JavaScript</span>
+                <span class="chip">C</span>
+                <span class="chip">C++</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <span class="group-title">Mobile &amp; Web</span>
+              <div class="skill-chips">
+                <span class="chip"><i class="fa-brands fa-android"></i> Android SDK</span>
+                <span class="chip"><i class="fa-solid fa-mobile-screen"></i> Jetpack Compose</span>
+                <span class="chip"><i class="fa-brands fa-html5"></i> HTML5</span>
+                <span class="chip"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                <span class="chip"><i class="fa-solid fa-arrows-split-up-and-left"></i> RESTful APIs</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <span class="group-title">Databases &amp; Cloud</span>
+              <div class="skill-chips">
+                <span class="chip"><i class="fa-solid fa-fire"></i> Firebase</span>
+                <span class="chip"><i class="fa-solid fa-database"></i> Firestore</span>
+                <span class="chip"><i class="fa-solid fa-server"></i> MySQL</span>
+                <span class="chip">SQL (RDBMS)</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <span class="group-title">Developer Tools</span>
+              <div class="skill-chips">
+                <span class="chip"><i class="fa-brands fa-git-alt"></i> Git</span>
+                <span class="chip"><i class="fa-brands fa-github"></i> GitHub</span>
+                <span class="chip"><i class="fa-solid fa-terminal"></i> Android Studio</span>
+                <span class="chip"><i class="fa-solid fa-code"></i> VS Code</span>
+                <span class="chip"><i class="fa-solid fa-cloud"></i> Vercel</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Certifications Card -->
+        <section class="card-section">
+          <div class="card-section-header">
+            <div class="header-icon icon-amber"><i class="fa-solid fa-award"></i></div>
+            <div>
+              <h2 class="card-section-title">Certifications</h2>
+            </div>
+          </div>
+          <div class="cert-card">
+            <h4 class="cert-name">Computer Science &amp; Cloud Computing</h4>
+            <p class="cert-authority">NPTEL</p>
+            <span class="cert-sub">National Programme on Technology Enhanced Learning</span>
+          </div>
+          <div class="cert-card" style="margin-top: 0.85rem;">
+            <h4 class="cert-name">Academic Research Scholar</h4>
+            <p class="cert-authority">Poornaprajna Institute of Management</p>
+            <span class="cert-sub">ORCID ID: 0009-0009-6370-4754</span>
+          </div>
+        </section>
+
+        <!-- Spoken Languages Card -->
+        <section class="card-section">
+          <div class="card-section-header">
+            <div class="header-icon icon-rose"><i class="fa-solid fa-language"></i></div>
+            <div>
+              <h2 class="card-section-title">Languages</h2>
+            </div>
+          </div>
+          <div class="lang-grid">
+            <div class="lang-row">
+              <span class="lang-name">English</span>
+              <span class="lang-bar-container"><span class="lang-bar" style="width: 90%;"></span></span>
+            </div>
+            <div class="lang-row">
+              <span class="lang-name">Kannada</span>
+              <span class="lang-bar-container"><span class="lang-bar" style="width: 100%;"></span></span>
+            </div>
+            <div class="lang-row">
+              <span class="lang-name">Hindi</span>
+              <span class="lang-bar-container"><span class="lang-bar" style="width: 80%;"></span></span>
+            </div>
+          </div>
+        </section>
+
+      </aside>
+    </div>
+
+    <!-- Contact & Call to Action Footer -->
+    <footer class="footer-cta no-print">
+      <div class="cta-inner">
+        <h3>Ready to start a conversation?</h3>
+        <p>I am actively seeking software engineering internships and full-time developer opportunities.</p>
+        <div class="cta-buttons">
+          <a href="mailto:nandanraj740@gmail.com" class="btn btn-primary">
+            <i class="fa-solid fa-paper-plane"></i> Send Email
+          </a>
+          <a href="https://github.com/nandanraj740-spec" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <i class="fa-brands fa-github"></i> Visit GitHub Profile
+          </a>
+          <button onclick="window.print()" class="btn btn-secondary">
+            <i class="fa-solid fa-print"></i> Print Clean Resume
+          </button>
+        </div>
+      </div>
+      <p class="copyright">&copy; <span id="year"></span> Nandanraj &bull; Built with clean, modern web standards.</p>
+    </footer>
+
+  </main>
+
+  <!-- Clean Single-Column ATS Resume View (Compliant with AI & ATS Screening Rules) -->
+  <section class="ats-container" id="atsView">
+    <div class="ats-header">
+      <h1 class="ats-name">NANDANRAJ</h1>
+      <p class="ats-contact">
+        Udupi, Karnataka, India | Phone: +91 84310 40668 | Email: nandanraj740@gmail.com / nandanraj.mca.2025@pim.ac.in
+      </p>
+      <p class="ats-contact">
+        GitHub: https://github.com/nandanraj740-spec | ORCID iD: 0009-0009-6370-4754
+      </p>
+    </div>
+
+    <hr class="ats-divider">
+
+    <!-- SUMMARY -->
+    <div class="ats-section">
+      <h2 class="ats-title">SUMMARY</h2>
+      <p class="ats-text">
+        Proactive Master of Computer Applications (MCA) scholar with specialized experience in native Android development, modern full-stack web engineering, and cloud backend integration. Demonstrated expertise in building production-grade applications using Kotlin, Java, Jetpack Compose, and Firebase, alongside integrating Large Language Models (LLMs) and Artificial Intelligence (AI) Application Programming Interfaces (APIs). Co-author of published scholarly analyses in the web development industry and corporate technology consulting. Seeking software engineering and developer opportunities.
+      </p>
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="ats-section">
+      <h2 class="ats-title">EDUCATION</h2>
+      <div class="ats-entry">
+        <div class="ats-entry-header">
+          <strong>Master of Computer Applications (MCA)</strong>
+          <span>2024 – Present</span>
+        </div>
+        <p class="ats-entry-sub">Poornaprajna Institute of Management (PIM) | Udupi, Karnataka, India</p>
+        <p class="ats-text">
+          Key Coursework: Advanced Data Structures, Object-Oriented Software Engineering, Relational Database Management Systems (RDBMS), Mobile Computing, Cloud Computing, and Operating Systems.
+        </p>
+      </div>
+
+      <div class="ats-entry">
+        <div class="ats-entry-header">
+          <strong>Bachelor of Computer Applications (BCA)</strong>
+          <span>Completed</span>
+        </div>
+        <p class="ats-entry-sub">Mangalore University Affiliated Institution | Karnataka, India</p>
+        <p class="ats-text">
+          Foundation in algorithms, computer programming in C, C++, and Java, database design, and systems architecture.
+        </p>
+      </div>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="ats-section">
+      <h2 class="ats-title">SKILLS</h2>
+      <ul class="ats-list">
+        <li><strong>Programming Languages:</strong> Java, Kotlin, Python, JavaScript (ECMAScript 6+), C, C++.</li>
+        <li><strong>Mobile &amp; Web Development:</strong> Android Software Development Kit (Android SDK), Jetpack Compose, XML Layouts, HyperText Markup Language (HTML5), Cascading Style Sheets (CSS3), RESTful Application Programming Interfaces (REST APIs).</li>
+        <li><strong>Cloud &amp; Databases:</strong> Firebase (Cloud Firestore, Firebase Authentication, Cloud Storage, Cloud Functions), MySQL, Structured Query Language (SQL), Relational Database Management Systems (RDBMS).</li>
+        <li><strong>Tools &amp; Version Control:</strong> Git, GitHub, Android Studio, Visual Studio Code (VS Code), Vercel.</li>
+        <li><strong>Spoken Languages:</strong> English (Professional Working Proficiency), Kannada (Native), Hindi (Working Proficiency).</li>
+      </ul>
+    </div>
+
+    <!-- EXPERIENCE & KEY PROJECTS -->
+    <div class="ats-section">
+      <h2 class="ats-title">EXPERIENCE &amp; KEY PROJECTS</h2>
+      
+      <div class="ats-entry">
+        <div class="ats-entry-header">
+          <strong>AgroMart: Digital Agricultural Commerce Platform &amp; Admin Suite</strong>
+          <span>September 2026</span>
+        </div>
+        <p class="ats-entry-sub">Lead Developer | Technologies: Android SDK, Kotlin, Java, Jetpack Compose, Firebase, Razorpay, OpenRouter AI</p>
+        <ul class="ats-list">
+          <li>Architected and deployed a multi-role farm-to-table platform connecting agricultural producers directly with commercial vendors and retail consumers.</li>
+          <li>Engineered an interactive Artificial Intelligence (AI) farming assistant leveraging multi-model Large Language Models (LLMs) including Google Gemini for crop disease diagnostics and mandi price forecasting.</li>
+          <li>Implemented secure payment workflows integrating Razorpay payment gateway, AgroPay digital wallet, and a four-digit delivery One-Time Password (OTP) verification handshake.</li>
+          <li>Constructed an administrative dashboard enabling real-time vendor verification, catalog moderation, and Goods and Services Tax (GST) digital invoice generation.</li>
+          <li>Repository: https://github.com/nandanraj740-spec/Agro-Mart</li>
+        </ul>
+      </div>
+
+      <div class="ats-entry">
+        <div class="ats-entry-header">
+          <strong>AgroMart Web Distribution Portal</strong>
+          <span>August 2026</span>
+        </div>
+        <p class="ats-entry-sub">Web Developer | Technologies: HTML5, CSS3, JavaScript, Vercel Edge Network</p>
+        <ul class="ats-list">
+          <li>Created a responsive, accessible landing page and application package (APK) distribution hub with automated binary delivery.</li>
+          <li>Ensured sub-second initial load speeds through asset optimization and global edge distribution on Vercel.</li>
+          <li>Repository: https://github.com/nandanraj740-spec/AgroMart-Website | Portal: https://agromart-portal.vercel.app</li>
+        </ul>
+      </div>
+
+      <div class="ats-entry">
+        <div class="ats-entry-header">
+          <strong>Medicare Hospital Management System</strong>
+          <span>2026</span>
+        </div>
+        <p class="ats-entry-sub">Software Developer | Technologies: Java, MySQL, Relational Database Management Systems (RDBMS)</p>
+        <ul class="ats-list">
+          <li>Designed an enterprise medical database management system managing outpatient and inpatient admissions, clinical histories, and pharmacy inventory.</li>
+          <li>Integrated role-based access control (RBAC) protocols separating doctor, nursing, and cashier administration tiers.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- RESEARCH PUBLICATIONS -->
+    <div class="ats-section">
+      <h2 class="ats-title">RESEARCH PUBLICATIONS</h2>
+      
+      <div class="ats-entry">
+        <div class="ats-entry-header">
+          <strong>Web Development Industry Analysis: Business Models, Technological Innovations, and Future Strategies</strong>
+        </div>
+        <p class="ats-entry-sub">Authors: Nandanraj &amp; Nikhil | Poornaprajna Institute of Management (PIM) | ORCID iD: 0009-0009-6370-4754</p>
+        <p class="ats-text">
+          Investigated structural transformations in enterprise web development, cloud computing services, microservices architecture, and API-driven application design.
+        </p>
+      </div>
+
+      <div class="ats-entry">
+        <div class="ats-entry-header">
+          <strong>Company Analysis of Global IT and Consulting Firm Accenture</strong>
+        </div>
+        <p class="ats-entry-sub">Authors: Nandanraj &amp; Nikhil | Poornaprajna Institute of Management (PIM) | ORCID iD: 0009-0009-6370-4754</p>
+        <p class="ats-text">
+          Applied Strengths, Weaknesses, Opportunities, Challenges (SWOC) and Advantages, Benefits, Constraints, Disadvantages (ABCD) frameworks to evaluate enterprise software delivery models and AI governance.
+        </p>
+      </div>
+    </div>
+
+    <!-- CERTIFICATIONS -->
+    <div class="ats-section">
+      <h2 class="ats-title">CERTIFICATIONS</h2>
+      <ul class="ats-list">
+        <li><strong>Cloud Computing &amp; Computer Science:</strong> National Programme on Technology Enhanced Learning (NPTEL).</li>
+        <li><strong>Academic Researcher Certification:</strong> ORCID International Researcher Identification (0009-0009-6370-4754).</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Notification Toast for Copying -->
+  <div id="toast" class="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
