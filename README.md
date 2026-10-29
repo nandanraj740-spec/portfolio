@@ -32,26 +32,4 @@ Modern, responsive personal portfolio and ATS-compliant CV website for **Nandanr
 
 ---
 
-## 📚 Research Publications
 
-- **Web Development Industry Analysis: Business Models, Technological Innovations, and Future Strategies**
-  - *Authors*: Nandanraj & Nikhil &bull; Poornaprajna Institute of Management (PIM), Udupi
-  - *ORCID iD*: [0009-0009-6370-4754](https://orcid.org/0009-0009-6370-4754)
-- **Company Analysis of Global IT and Consulting Firm Accenture**
-  - *Authors*: Nandanraj & Nikhil &bull; Poornaprajna Institute of Management (PIM), Udupi
-
----
-
-## 🛠️ GitHub Pages Deployment
-
-To host this repository on GitHub Pages:
-1. Push this repository to GitHub under:
-   ```bash
-   git remote add origin https://github.com/nandanraj740-spec/portfolio.git
-   git branch -M main
-   git push -u origin main
-   ```
-2. In the GitHub repository, navigate to **Settings** &rarr; **Pages**.
-3. Under **Branch**, select `main` (root) and click **Save**.
-4. Your website will be live at:
-   `https://nandanraj740-spec.github.io/portfolio/`
